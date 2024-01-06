@@ -1,0 +1,286 @@
+html, body{
+     height: 100%;
+     background: linear-gradient(to bottom, #202020, #111119);
+}
+
+.buttonPlus{ /*button plus*/
+     background: #222;
+     height: 25px;
+     min-width: 25px;
+     border: solid black 1px;
+     border-radius: 3px;
+     color: #eee;
+     font-size: 14px;
+     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+     position: relative;
+     transition: all 0.2s ease-in-out;
+     -webkit-tap-highlight-color: transparent;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     cursor: pointer;
+     top: -33px;
+     left: 296px;
+     z-index: 5;
+}
+
+.buttonPlus:before {
+     content: '';
+     background: linear-gradient(45deg, #ff0000, #ff0000e3, #ff0000c7);
+     position: absolute;
+     top: -2px;
+     left:-2px;
+     background-size: 400%;
+     z-index: -1;
+     filter: blur(3px);
+     width: calc(100% + 4px);
+     height: calc(100% + 4px);
+     animation: glowing 20s linear infinite;
+     opacity: 0;
+     transition: opacity .3s ease-in-out;
+     border-radius: 5px;
+     
+ }
+ 
+.buttonPlus:active {
+     color: #222;
+ }
+ 
+.buttonPlus:active:after {
+     background: transparent;
+ }
+ 
+.buttonPlus:hover:before {
+     opacity: 1;
+ }
+ 
+.buttonPlus:after {
+     z-index: -1;
+     content: '';
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     background: #222;
+     left: 0;
+     top: 0;
+     border: black;
+ }
+ 
+@keyframes glowing {
+     0% { background-position: 0 0; }
+     50% { background-position: 400% 0; }
+     100% { background-position: 0 0; }
+ } /*button end*/
+ 
+
+.fade-Out {
+     cursor: pointer;
+     position: relative;
+     background:none; 
+     border: solid 1px black;
+     width: 410px;
+     height: 22px;
+     margin: 8px;
+     border-width: 1px 1px;
+     padding: 7px;
+}
+
+.resultHere{
+     color: #eee;
+     z-index: 5;
+     position:relative;
+     margin: 10px;
+      animation: fadeIn ease 3s;
+      -webkit-animation: fadeIn ease 3s;
+      -moz-animation: fadeIn ease 3s;
+      -o-animation: fadeIn ease 3s;
+      -ms-animation: fadeIn ease 3s;
+    }
+    @keyframes fadeIn {
+      0% {
+        opacity:0;
+      }
+      100% {
+        opacity:1;
+      }
+    }
+    
+    @-moz-keyframes fadeIn {
+      0% {
+        opacity:0;
+      }
+      100% {
+        opacity:1;
+      }
+    }
+    
+    @-webkit-keyframes fadeIn {
+      0% {
+        opacity:0;
+      }
+      100% {
+        opacity:1;
+      }
+    }
+    
+    @-o-keyframes fadeIn {
+      0% {
+        opacity:0;
+      }
+      100% {
+        opacity:1;
+      }
+    }
+    
+    @-ms-keyframes fadeIn {
+      0% {
+        opacity:0;
+      }
+      100% {
+        opacity:1;
+      }
+    }
+
+
+.bClear{ /*button clearB*/
+     background: #222;
+     height: 25px;
+     min-width: 25px;
+     border: solid black 1px;
+     border-radius: 3px;
+     color: #eee;
+     font-size: 14px;
+     padding: 0 15px;
+     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+     position: relative;
+     transition: all 0.2s ease-in-out;
+     -webkit-tap-highlight-color: transparent;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     cursor: pointer;
+     top: -58px;
+     left: 327px;
+     z-index: 5;
+}
+
+     .bClear:hover { 
+     box-shadow: 1px 1px #000000, 2px 2px #000000, 3px 3px #000000;
+     transform: translateX(-3px);
+     }
+
+.bInput{ /*button BInput*/
+     background: #222;
+     height: 28px;
+     min-width: 23px;
+     border: solid black 1px;
+     border-left-style: none;
+     color: rgb(255, 255, 255);
+     font-size: 14px;
+     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+     position: relative;
+     transition: 1s;
+     -webkit-tap-highlight-color: transparent;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     cursor: pointer;
+     top: -85px;
+     left: 266px;
+     z-index: 5;
+}
+
+@keyframes glowing {
+     0% { background-position: 0 0; }
+     50% { background-position: 400% 0; }
+     100% { background-position: 0 0; }
+ } /*button end*/
+
+.bLast{ /*button bLast*/
+     background: #222;
+     height: 25px;
+     min-width: 25px;
+     border: solid black 1px;
+     border-radius: 3px;
+     color: #eee;
+     padding: 0 15px;
+     font-size: 14px;
+     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+     position: relative;
+     transition: all 0.2s ease-in-out;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     cursor: pointer;
+     top: 34px;
+     left: 386px;
+     z-index: 5;
+}
+
+     .bLast:hover { 
+     box-shadow: 1px 1px #000000, 2px 2px #000000, 3px 3px #000000;
+     transform: translateX(-3px);
+     }
+
+.input{
+  position: relative;
+  background: #222;
+  width: 288px;
+  height: 28px;
+  padding: 5px 7px;
+  margin: 7px 1px;
+  display:block;
+  border: solid black 1px;
+  border-radius: 3px;
+  color: #eee;
+  box-sizing: border-box;
+  z-index: 5;
+}
+
+.lines{
+     position: absolute;
+     top: 0;
+     left: 0;
+     right: 0;
+     height: 100%;
+     margin: auto;
+     width: 90vw;
+   }
+
+.line{
+     position: absolute;
+     width: 1px;
+     height: 100%;
+     top: 0;
+     left: 54%;
+     background: rgb(255, 255, 255, 0.1);
+     overflow: hidden;
+   }
+
+.lines::after{
+    content: '';
+    display: block;
+    position: absolute;
+    height: 15vh;
+    width: 1px;
+    top: -50%;
+    left: 427px;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #ffffff 75%, #ffffff 100%);
+    animation: drop 7s 0s infinite;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
+  }
+
+.line:nth-child(1){
+     margin-left: -21%;}
+     .line::after{
+       animation-delay: 0.5s;
+     }
+  
+    
+  @keyframes drop{
+          0%
+           {top: -60%}
+          100%
+           {top: 110%}
+        } /* end */
